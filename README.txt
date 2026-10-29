@@ -1,17 +1,15 @@
-Darende Image Converter - ilk sürüm
+Darende Image Converter v2
 
-KULLANIM / ÜCRETSİZ YAYIN
-1) Bu klasörün içeriğini Cloudflare Pages, GitHub Pages veya Netlify gibi HTTPS destekli statik site barındırmasına yükleyin.
-2) iPhone Safari'de HTTPS adresini açıp Paylaş > Ana Ekrana Ekle seçin.
-3) Windows'ta Chrome/Edge menüsünden Uygulamayı yükle seçin.
-4) İlk ziyaret ve önbellekleme internet ister, sonrasında çevrimdışı çalışır.
+KURULUM:
+ZIP'i bilgisayarda açın. index.html, app.js, style.css dosyalarını GitHub'daki darende-image deposunun ana dizinine yükleyip mevcut dosyaları bu dosyalarla değiştirin. GitHub Pages açık ise yayın yeni commit sonrasında güncellenir.
 
-YEREL TEST (BİLGİSAYAR)
-Bu klasörde terminal açıp python -m http.server 8000 komutunu çalıştırın ve http://localhost:8000 adresine gidin. Dosyayı doğrudan açmak çevrimdışı önbelleği etkinleştirmez.
+ÖZELLİKLER:
+- Fotoğraf seçince altta önizleme
+- Birden fazla fotoğraf seçme
+- Genişlik/yükseklik ayarlama
+- JPG, PNG, WebP dönüştürme (tarayıcının desteklediği çıktılar)
+- Dönüştürülmüş fotoğrafları görüntüleme ve tek tek indirme
+- Mobil uyumlu arayüz
 
-NOTLAR
-- JPG/WebP kaliteyle sıkıştırılır; PNG kayıpsız olduğundan KB sınırı garanti edilemez.
-- Bazı fotoğraflar en düşük kalitede bile seçilen hedef KB boyutundan büyük kalabilir.
-- HEIC desteği tarayıcıdan tarayıcıya değişir.
-- ZIP dosyaları sıkıştırılmadan paketlenir; görseller zaten kendi formatlarında sıkıştırılmıştır.
-- Fotoğraflar hiçbir sunucuya gönderilmez.
+ÖNEMLİ:
+WebP üretimi bazı tarayıcı/sürümlerde desteklenmeyebilir; bu durumda uygulama açık hata mesajı verir. HEIC/HEIF yüklemeleri cihaz ve tarayıcıya bağlıdır. Safari, Android ve masaüstünde canlı test yapılarak doğrulanmalıdır. Uygulama sunucuya dosya göndermez.
